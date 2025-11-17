@@ -6,7 +6,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-    background: #1a1a1a;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     padding: 20px;
 }
@@ -17,16 +17,15 @@ body {
 }
 
 header {
-    background: #2a2a2a;
-    border-radius: 12px;
+    background: white;
+    border-radius: 15px;
     padding: 30px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    border: 1px solid #3a3a3a;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-    color: #f5f5f5;
+    color: #333;
     margin-bottom: 20px;
     font-size: 28px;
 }
@@ -38,34 +37,28 @@ nav {
 
 nav a {
     padding: 10px 20px;
-    background: #3a3a3a;
-    color: #b0b0b0;
+    background: #f0f0f0;
+    color: #666;
     text-decoration: none;
     border-radius: 8px;
     transition: all 0.3s;
     font-weight: 500;
-    border: 1px solid #4a4a4a;
 }
 
 nav a:hover {
-    background: #4a4a4a;
-    border-color: #5a5a5a;
-    color: #f5f5f5;
+    background: #e0e0e0;
 }
 
 nav a.active {
-    background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    border-color: #00d4ff;
-    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
 }
 
 main {
-    background: #2a2a2a;
-    border-radius: 12px;
+    background: white;
+    border-radius: 15px;
     padding: 30px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    border: 1px solid #3a3a3a;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .input-section {
@@ -73,7 +66,7 @@ main {
 }
 
 h2 {
-    color: #f5f5f5;
+    color: #333;
     margin-bottom: 20px;
     font-size: 22px;
 }
@@ -91,46 +84,39 @@ h2 {
 label {
     display: block;
     margin-bottom: 8px;
-    color: #b0b0b0;
+    color: #555;
     font-weight: 500;
 }
 
 input, textarea {
     width: 100%;
     padding: 12px;
-    border: 2px solid #3a3a3a;
+    border: 2px solid #e0e0e0;
     border-radius: 8px;
     font-size: 14px;
-    transition: all 0.3s;
-    background: #1a1a1a;
-    color: #f5f5f5;
+    transition: border-color 0.3s;
 }
 
 input:focus, textarea:focus {
     outline: none;
-    border-color: #00d4ff;
-    background: #2a2a2a;
-    box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+    border-color: #667eea;
 }
 
 .btn-primary {
     width: 100%;
     padding: 15px;
-    background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s;
-    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+    transition: transform 0.2s;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, #00bfea 0%, #0088ea 100%);
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 212, 255, 0.4);
 }
 
 .btn-primary:active {
@@ -152,13 +138,11 @@ input:focus, textarea:focus {
     border-radius: 8px;
     font-size: 14px;
     cursor: pointer;
-    transition: all 0.3s;
-    box-shadow: 0 2px 8px rgba(255, 71, 87, 0.3);
+    transition: background 0.3s;
 }
 
 .btn-danger:hover {
-    background: #ee3344;
-    box-shadow: 0 4px 12px rgba(255, 71, 87, 0.4);
+    background: #ee5a6f;
 }
 
 #logsList {
@@ -168,14 +152,11 @@ input:focus, textarea:focus {
 }
 
 .log-item {
-    background: #1a1a1a;
+    background: #f8f9fa;
     padding: 20px;
-    border-radius: 12px;
-    border-left: 4px solid #00d4ff;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
     position: relative;
-    border: 1px solid #3a3a3a;
-    border-left: 4px solid #00d4ff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .log-header {
@@ -188,17 +169,16 @@ input:focus, textarea:focus {
 .log-title {
     font-size: 18px;
     font-weight: 600;
-    color: #f5f5f5;
+    color: #333;
 }
 
 .log-efficiency {
-    background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 14px;
     font-weight: 600;
-    box-shadow: 0 2px 8px rgba(0, 212, 255, 0.3);
 }
 
 .log-details {
@@ -209,22 +189,21 @@ input:focus, textarea:focus {
 }
 
 .log-detail {
-    color: #909090;
+    color: #666;
     font-size: 14px;
 }
 
 .log-detail strong {
-    color: #d0d0d0;
+    color: #333;
 }
 
 .log-memo {
-    background: #2a2a2a;
+    background: white;
     padding: 10px;
-    border-radius: 8px;
-    color: #b0b0b0;
+    border-radius: 6px;
+    color: #666;
     font-size: 14px;
     margin-top: 10px;
-    border: 1px solid #3a3a3a;
 }
 
 .btn-delete {
@@ -235,32 +214,28 @@ input:focus, textarea:focus {
     color: white;
     border: none;
     padding: 6px 12px;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 12px;
-    transition: all 0.3s;
-    box-shadow: 0 2px 8px rgba(255, 71, 87, 0.3);
+    transition: background 0.3s;
 }
 
 .btn-delete:hover {
-    background: #ee3344;
-    box-shadow: 0 4px 12px rgba(255, 71, 87, 0.4);
+    background: #ee5a6f;
 }
 
 .empty-state {
     text-align: center;
     padding: 40px;
-    color: #707070;
+    color: #999;
 }
 
 /* グラフページ用 */
 .chart-container {
-    background: #2a2a2a;
+    background: white;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 10px;
     margin-bottom: 20px;
-    border: 1px solid #3a3a3a;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .chart-wrapper {
@@ -276,12 +251,11 @@ input:focus, textarea:focus {
 }
 
 .stat-card {
-    background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 25px;
-    border-radius: 12px;
+    border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 16px rgba(0, 212, 255, 0.3);
 }
 
 .stat-value {

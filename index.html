@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポケモン捕獲ログ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 ポケモン捕獲ログ</h1>
+            <nav>
+                <a href="index.html" class="active">ログ入力</a>
+                <a href="efficiency.html">湧き効率グラフ</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <h2>新規ログ追加</h2>
+                <form id="catchForm">
+                    <div class="form-group">
+                        <label for="location">場所</label>
+                        <input type="text" id="location" required placeholder="例：公園A、駅前、コミュデイ会場">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pokemon">ポケモン名</label>
+                        <input type="text" id="pokemon" required placeholder="例：ピカチュウ">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="startTime">開始時刻</label>
+                            <input type="datetime-local" id="startTime" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="endTime">終了時刻</label>
+                            <input type="datetime-local" id="endTime" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="count">捕獲数</label>
+                        <input type="number" id="count" required min="1" placeholder="例：15">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="memo">メモ（任意）</label>
+                        <textarea id="memo" rows="3" placeholder="天候、イベント情報など"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">📝 ログを追加</button>
+                </form>
+            </section>
+
+            <section class="logs-section">
+                <div class="section-header">
+                    <h2>ログ一覧</h2>
+                    <button id="clearAll" class="btn-danger">全削除</button>
+                </div>
+                <div id="logsList"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

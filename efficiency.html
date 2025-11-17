@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湧き効率グラフ - ポケモン捕獲ログ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 湧き効率グラフ</h1>
+            <nav>
+                <a href="index.html">ログ入力</a>
+                <a href="efficiency.html" class="active">湧き効率グラフ</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="stats-grid" id="statsGrid">
+                <!-- 統計カードがここに表示される -->
+            </div>
+
+            <div class="chart-container">
+                <h2>場所別 1時間あたりの平均捕獲数</h2>
+                <div class="chart-wrapper">
+                    <canvas id="locationChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2>ポケモン別 1時間あたりの平均捕獲数</h2>
+                <div class="chart-wrapper">
+                    <canvas id="pokemonChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2>時系列グラフ（最新20件）</h2>
+                <div class="chart-wrapper">
+                    <canvas id="timelineChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2>場所別 総捕獲数</h2>
+                <div class="chart-wrapper">
+                    <canvas id="totalCatchChart"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="efficiency.js"></script>
+</body>
+</html>

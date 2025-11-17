@@ -44,7 +44,7 @@ function displayLogs() {
     const logsList = document.getElementById('logsList');
 
     if (logs.length === 0) {
-        logsList.innerHTML = '<div class="empty-state">📭 まだログがありません</div>';
+        logsList.innerHTML = '<div class="empty-state">まだログがありません</div>';
         return;
     }
 

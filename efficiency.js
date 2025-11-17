@@ -117,7 +117,7 @@ function displayStats(logs) {
     const statsGrid = document.getElementById('statsGrid');
 
     if (logs.length === 0) {
-        statsGrid.innerHTML = '<div class="empty-state">📭 データがありません</div>';
+        statsGrid.innerHTML = '<div class="empty-state">データがありません</div>';
         return;
     }
 
@@ -400,7 +400,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (logs.length === 0) {
         document.querySelector('main').innerHTML = `
             <div class="empty-state" style="padding: 60px 20px;">
-                <h2>📭 データがありません</h2>
+                <h2>データがありません</h2>
                 <p style="margin-top: 20px; color: #666;">
                     <a href="index.html" style="color: #667eea; text-decoration: none; font-weight: bold;">
                         ログ入力ページ
